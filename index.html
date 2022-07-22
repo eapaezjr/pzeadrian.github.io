@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <script type="text/javascript" src="js/navbar.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <title>Investigation</title>
+</head>
+
+<body>
+  <section class="navbar">
+    <div id="options">
+      <ul>
+        <li><a id="aHome" onclick="home()">Home</a></li>
+        <li><a id="aParticipants" onclick="participants()">Participants</a></li>
+        <li><a id="aProjects" onclick="projects()">Projects</a></li>
+        <li><a id="aAbout" onclick="about()">About</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="content">
+    <div class="home">
+      <div class="general">
+        <h1>Investigation Group - Programming</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+          quidem, quisquam.
+        </p>
+      </div>
+
+      <div id="slider">
+        <div class="slider-container container">
+          <img src="assets/svg/bxs-chevron-left-circle.svg" class="slider-arrow" id="before" onclick="move()" />
+
+          <div class="slider-body slider-body--show" data-id="1">
+            <div class="slider-text">
+              <h2 class="subtitle">Rust</h2>
+              <p class="slider-review">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, esse aliquam iusto
+                minus quo accusamus!
+              </p>
+            </div>
+            <figure class="slider-picture">
+              <img src="assets/rust.jpg" class="slider-img" alt="Rust" />
+            </figure>
+          </div>
+
+          <div class="slider-body" data-id="2">
+            <div class="slider-text">
+              <h2 class="subtitle">C++</h2>
+              <p class="slider-review">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, esse aliquam iusto
+                minus quo accusamus!
+              </p>
+            </div>
+            <figure class="slider-picture">
+              <img src="assets/cpp.png" class="slider-img" alt="CPP" />
+            </figure>
+          </div>
+
+          <div class="slider-body" data-id="3">
+            <div class="slider-text">
+              <h2 class="subtitle">Java</h2>
+              <p class="slider-review">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, esse aliquam iusto
+                minus quo accusamus!
+              </p>
+            </div>
+            <figure class="slider-picture">
+              <img src="assets/java.png" class="slider-img" alt="Java" />
+            </figure>
+          </div>
+
+          <div class="slider-body" data-id="4">
+            <div class="slider-text">
+              <h2 class="subtitle">Python</h2>
+              <p class="slider-review">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, esse aliquam iusto
+                minus quo accusamus!
+              </p>
+            </div>
+            <figure class="slider-picture">
+              <img src="assets/python.jpg" class="slider-img" alt="Python" />
+            </figure>
+          </div>
+
+          <img src="assets/svg/bxs-chevron-right-circle.svg" class="slider-arrow" id="after" onclick="move()" />
+        </div>
+      </div>
+    </div>
+    <div class="participants">
+      <h2>Researchers</h2>
+      <div class="researchers">
+        <div class="researcher r1">
+          <img src="assets/researcher1.jpg" alt="Person 1" />
+          <div class="researcher-info">
+            <h3>MTR. Paolo Silva</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              quidem, quisquam.
+            </p>
+          </div>
+        </div>
+        <div class="researcher r2">
+          <img src="assets/researcher2.jpg" alt="Person 2" />
+          <div class="researcher-info">
+            <h3>Mgtr. Isabella De Santis</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              quidem, quisquam.
+            </p>
+          </div>
+        </div>
+        <div class="researcher r3">
+          <img src="assets/researcher3.jpg" alt="Person 3" />
+          <div class="researcher-info">
+            <h3>PhD. Robert Stewart</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              quidem, quisquam.
+            </p>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <h2>Students</h2>
+      <div class="students">
+        <div class="student s1">
+          <img src="assets/student1.jpg" alt="Person 1" />
+          <div class="student-info">
+            <h3>Joseph González</h3>
+          </div>
+        </div>
+        <div class="student s2">
+          <img src="assets/student2.jpg" alt="Person 2" />
+          <div class="student-info">
+            <h3>Eva Myers</h3>
+          </div>
+        </div>
+        <div class="student s3">
+          <img src="assets/student3.jpg" alt="Person 3" />
+          <div class="student-info">
+            <h3>Qiang Zhao</h3>
+          </div>
+        </div>
+        <div class="student s4">
+          <img src="assets/student4.jpg" alt="Person 4" />
+          <div class="student-info">
+            <h3>Patrick McGregor</h3>
+          </div>
+        </div>
+        <div class="student s5">
+          <img src="assets/student5.jpg" alt="Person 5" />
+          <div class="student-info">
+            <h3>Michael Hooks</h3>
+          </div>
+        </div>
+        <div class="student s6">
+          <img src="assets/student6.jpg" alt="Person 6" />
+          <div class="student-info">
+            <h3>Ana Espí</h3>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <h2>Sponsors</h2>
+      <div class="collaborators">
+        <img src="assets/colab1.png" alt="Collaborator 1" />
+        <img src="assets/colab2.png" alt="Collaborator 2" />
+        <img src="assets/colab3.png" alt="Collaborator 3" />
+        <img src="assets/colab4.webp" alt="Collaborator 4" />
+        <img src="assets/colab5.png" alt="Collaborator 5" />
+      </div>
+    </div>
+    <div class="projects">
+      <h2>Projects</h2>
+      <div class="project p1">
+        <img src="assets/project1.jpg" alt="Project 1" />
+        <div class="projectText">
+          <h3>Programming the Future</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nemo modi harum quas animi accusamus aliquam
+            quidem autem! Eligendi ratione, vero blanditiis dolore repellendus ipsa qui harum itaque nesciunt. Possimus
+            alias id, voluptatum tenetur aspernatur repudiandae, libero ullam enim vero atque nobis earum et esse neque
+            non, ab excepturi. Error.
+          </p>
+        </div>
+        <img src="assets/svg/bxs-chevron-right-circle.svg" class="project-arrow" />
+
+      </div>
+      <div class="project p2">
+        <img src="assets/project2.webp" alt="Project 2" />
+        <div class="projectText">
+          <h3>AI Programming</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nemo modi harum quas animi accusamus aliquam
+            quidem autem! Eligendi ratione, vero blanditiis dolore repellendus ipsa qui harum itaque nesciunt. Possimus
+            alias id, voluptatum tenetur aspernatur repudiandae, libero ullam enim vero atque nobis earum et esse neque
+            non, ab excepturi. Error.
+          </p>
+        </div>
+        <img src="assets/svg/bxs-chevron-right-circle.svg" class="project-arrow" />
+      </div>
+    </div>
+    <div class="about">
+      <h2>About</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et odio sint fuga facilis, perspiciatis quae dolor cum
+        quaerat porro possimus, soluta ea excepturi asperiores at?
+      </p>
+    </div>
+  </section>
+</body>
+<script type="text/javascript" src="js/slider.js"></script>
+
+</html>
