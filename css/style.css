@@ -70,7 +70,7 @@
 }
 
 #content {
-    padding: 20px;
+    padding: 10px;
     position: relative;
 }
 
@@ -151,6 +151,7 @@
 }
 
 .slider-text {
+    text-align: justify;
     max-width: 400px;
     background-color: #A5C9CA;
     padding: 15px;
@@ -182,6 +183,55 @@
 
 .slider-picture {
     background-color: #A5C9CA;
+}
+
+.events .container {
+    background-color: #A5C9CA;
+    padding: 40px 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1.5em;
+    margin: 40px;
+}
+
+.events-text {
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    background-color: #A5C9CA;
+    padding: 15px;
+    font-size: 25px;
+    padding-bottom: 0;
+}
+
+.events-box {
+    background-color: #A5C9CA;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.events-review {
+    background-color: #A5C9CA;
+    border-radius: 22px;
+    padding: 10px;
+    width: fit-content;
+    margin: 10px;
+    margin-left: 83px;
+    position: absolute;
+}
+
+.event-img {
+    width: 750px;
+    margin: 0 auto;
+    background-color: #A5C9CA;
+    border-radius: 22px;
+    align-items: center;
+    text-align: center;
 }
 
 .participants {
