@@ -72,6 +72,7 @@
 #content {
     padding: 10px;
     position: relative;
+    padding: 30px 50px;
 }
 
 #options #aHome {
@@ -272,14 +273,21 @@
 
 .students {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 2fr);
     align-items: center;
     justify-content: center;
-    text-align: center;
 }
 
 .student {
     margin: 30px 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.student-info {
+    margin: 10px;   
 }
 
 .projects {
@@ -288,7 +296,7 @@
     transition: opacity 1s;
     align-items: center;
     justify-content: center;
-    margin-left: 75px;
+    padding: 0 50px;
 }
 
 .projects h2 {
@@ -306,8 +314,8 @@
 
 .project{
     display: flex;
-    flex-direction: row;
-    margin-right: 20px;
+    /* flex-direction: row;
+    margin-right: 20px; */
     background-color: #A5C9CA;
     border-radius: 22px;
     width: fit-content;
@@ -322,11 +330,16 @@
     width: 900px;
     padding: 25px;
     border-radius: 22px;
+    text-align: justify;
 }
 
 .projectText p, .projectText h3{
     background-color: #A5C9CA;
     color: #395b64;
+}
+
+.projectText h3 {
+    margin: 10px 0;
 }
 
 .project .project-arrow{
@@ -343,6 +356,7 @@
     display: none;
     animation: ease animateIn 1s;
     transition: opacity 1s;
+    text-align: justify;
 }
 
 .about h2 {
