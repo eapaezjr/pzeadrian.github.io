@@ -254,8 +254,8 @@
 }
 
 .researchers {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
 }
@@ -264,11 +264,14 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-right: 20px;
+    margin-right: 25px;
+    margin-bottom: 30px;
 }
 
 .researcher-info {
     margin: 10px;
+    font-size: 12px;
+    text-align: justify;
 }
 
 .students {
@@ -279,15 +282,15 @@
 }
 
 .student {
-    margin: 30px 0;
-    padding: 20px;
+    margin: 0 0 30px 0;
+    padding: 25px;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
 .student-info {
-    margin: 10px;   
+    margin: 2px;   
 }
 
 .projects {
